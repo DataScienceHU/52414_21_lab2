@@ -151,10 +151,7 @@ In this question we find and display different skills and their correlations
 
 a. We are interested in finding out which positions are similar in terms of players' performance.  
 Extract the 26 non-goalkeeper positions (`CAM, CB, ..., ST`). 
-Calculate the correlation between players' ability in each pair of positions and show a heatmap correlation-plot of the correlations' matrix. What three positions have the *least* average correlations with other skills? <br>
-We are interested in finding out which skills are similar in terms of players' performance at the position. 
-Extract the 29 skills for non-goalkeeper players (Acceleration, ..., Volleys, except 'GK.*' skills). 
-Calculate the correlation between players' ability in each pair of skills and show a heatmap correlation-plot of the correlations' matrix. What two skills seem least correlated with other skills? 
+Calculate the correlation between players' ability in each pair of positions and show a heatmap correlation-plot of the correlations' matrix. What three positions have the *least* average correlations with other positions? <br>
 
 
 b. Consider the following indicators of players performance: `overall` players' performance, their `potential`, 
@@ -169,14 +166,13 @@ with the constraint that there must be a goalkeaper (preferred position `GK`). <
 - List the players in a table including their `overall` performance and the team average `overall` score. <br>
 Next, peak six *different* players of your choice from your team, one of which is the goalkeaper. Using the function `radarchart::chartJSRadar`, graph their abilities (individually for all 6 players) in the top *10* skills according to 3.b in a [radar chart](https://en.wikipedia.org/wiki/Radar_chart) (also called 'spider chart')  graph. See below an example for such a chart. 
 
-d. We are interested in determining how the player's abilities in different positions changes with age. 
-Repeat the analysis of question 2.a., but this time show the *34* different skills  
-Which skills peak at youngest/oldest ages?
+d. We are interested in determining how the player's abilities in different `positions` changes with age. 
+Repeat the analysis of question 2.a., but this time show the *26* different `positions` (except goal-keaper). Abilities in which `positions` peak at youngest/oldest ages?
 
 e. Your boss suggests that some players may be currently under-payed compared to their performance,
 and that we can acquire them by offering them a higher salary (`wage`).  <br>
 Fit a multiple regression model predicting player's `overall` performance based on their `wage` and `age`. <br>
-Find the $10$ players with the highest difference between their `wage` performance level and the regression model prediction, 
+Find the $10$ players with the highest difference between their `overall` performance level and the regression model prediction, 
 and list them in a table. 
 
 
